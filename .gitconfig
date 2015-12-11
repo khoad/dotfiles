@@ -1,0 +1,7 @@
+[user]
+	name = Khoa Nguyen
+	email = khoa.nguyen@nordstrom.com
+[core]
+	autocrlf = input
+[push]
+	default = current

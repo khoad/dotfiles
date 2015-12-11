@@ -1,0 +1,15 @@
+"*":
+  "exception-reporting":
+    userId: "b1952f7d-c691-055e-3905-dfa0e66f9b37"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "monokai"
+    ]
+    disabledPackages: [
+      "wrap-guide"
+    ]
+  editor:
+    invisibles: {}
