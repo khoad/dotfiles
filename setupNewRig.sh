@@ -26,5 +26,14 @@ mv Meslo%20LG%20M%20DZ%20Regular%20for%20Powerline.otf /Library/Fonts
 # Have to load colors manually :(
 curl -O https://raw.githubusercontent.com/mbadolato/iTerm2-Color-Schemes/master/schemes/Solarized%20Dark%20Higher%20Contrast.itermcolors
 
-# install oh my zsh
+# Install oh my zsh
+# Have to exit manually :(
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# Change default zsh theme to agnoster
+sed -i -- 's/robbyrussell/agnoster/g' .zshrc
+
+# Setup VIM
+cp source/dotfiles/.vimrc ~
+mkdir -p .vim/colors
+curl -O "https://raw.githubusercontent.com/chriskempson/base16-vim/master/colors/base16-solarized.vim"
+mv base16-solarized.vim .vim/colors
