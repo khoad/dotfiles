@@ -18,6 +18,7 @@ apm install atom-solarized-dark-ui
 apm install monokai
 apm install atom-beautify
 apm install sublime-style-column-selection
+apm install minimap
 
 # iTerm setup
 # Have to change font in iTerm manually :(
