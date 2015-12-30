@@ -19,6 +19,7 @@ apm install monokai
 apm install atom-beautify
 apm install sublime-style-column-selection
 apm install minimap
+apm install highlight-selected
 
 # iTerm setup
 # Have to change font in iTerm manually :(
