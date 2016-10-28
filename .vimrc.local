@@ -1,0 +1,4 @@
+call colors#_change(34)
+set binary
+set noeol
+au BufRead,BufNewFile *.template setfiletype json
