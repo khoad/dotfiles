@@ -81,7 +81,7 @@ prompt_end() {
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     if [ $USER = "a1px" ]; then
-      prompt_segment black default "%(!.%{%F{yellow}%}.)khoa@%m"
+      prompt_segment black default "%(!.%{%F{yellow}%}.)khoa@%m-%*"
     else
       prompt_segment black default "%(!.%{%F{yellow}%}.)$USER@%m"
     fi
