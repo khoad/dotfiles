@@ -9,6 +9,8 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="/Applications/Redis.app/Contents/Resources/Vendor/redis/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# Disable shared history
+unsetopt share_history
 
 # So oh-my-zsh doesn't ask
 DISABLE_AUTO_UPDATE=true
@@ -103,6 +105,6 @@ source $ZSH/oh-my-zsh.sh
 [ -s "/Users/a1px/.dnx/dnvm/dnvm.sh" ] && . "/Users/a1px/.dnx/dnvm/dnvm.sh" # Load dnvm
 
 # PROXY
-source $HOME/source/dotfiles_nordstrom/proxy-functions.sh
+# source $HOME/source/dotfiles_nordstrom/proxy-functions.sh
 # ZSH syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
